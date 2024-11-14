@@ -37,15 +37,19 @@ This project aims to predict customer churn for a telecom company and segment cu
 
 ### Prerequisites
 - Python 3.x
-- Jupyter Notebook
+- Jupyter Notebook or Google colab
 - Libraries: `pandas`, `numpy`, `sklearn`, `matplotlib`, `seaborn`
 
 Install the necessary packages using:
 ```bash
 pip install -r requirements.txt
 ```
-
 ### Usage
+1. Run on Google Colab directly:
+    ```bash
+    https://colab.research.google.com/drive/14YxxPhPm3x-Ibi7EBPrBDwZGz-zPk5HZ?usp=sharing
+   ```
+or
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/Customer-Churn-Prediction.git
