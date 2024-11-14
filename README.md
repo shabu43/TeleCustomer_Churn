@@ -1,25 +1,67 @@
-# Customer Churn Prediction
-This repository contains a machine learning project focused on predicting customer churn for a telecom company using various supervised learning algorithms. The dataset includes customer demographics, services, and account information, which are used to build predictive models.
 
-## Features of the Project:
-## Data Preprocessing:
+# Customer Churn Prediction and Segmentation
 
-Handling missing values and converting categorical features to numerical ones using OneHotEncoding.
-Scaling numerical features with StandardScaler.
-Feature engineering and selection using statistical methods like Chi-Square Test and ANOVA.
-## Feature Selection:
+This project aims to predict customer churn for a telecom company and segment customers into distinct groups. The dataset includes customer demographics, service usage, and account information, which are used to build predictive models and perform clustering analysis. The objective is to improve customer retention strategies by identifying factors leading to churn and understanding customer segments.
 
-Chi-Square Test: Applied to categorical variables to assess their significance in predicting churn.
-ANOVA (Analysis of Variance): Used for numerical features to determine their contribution to churn prediction.
-Techniques for removing insignificant features and the impact on model performance.
-## Models:
+## Features of the Project
 
-Logistic Regression (with Regularization: Lasso, Ridge, and ElasticNet)
-Decision Tree Classifier
-Random Forest Classifier
-Support Vector Machine (SVM)
-Feature selection techniques like Recursive Feature Elimination (RFE) to improve model accuracy.
-## Evaluation:
+### 1. Data Preprocessing
+- **Handling Missing Values**: Imputed missing values where necessary.
+- **Encoding Categorical Features**: Converted categorical features to numerical using `OneHotEncoder`.
+- **Feature Scaling**: Scaled numerical features with `StandardScaler`.
+- **Feature Engineering and Selection**: Used statistical methods like Chi-Square and ANOVA to identify significant features for churn prediction.
 
-Models are evaluated using metrics like accuracy, classification report, and cross-validation to ensure robust performance.
-Hyperparameter tuning using GridSearchCV to optimize model performance.
+### 2. Feature Selection
+- **Chi-Square Test**: Applied to categorical variables to assess their relevance in predicting churn.
+- **ANOVA (Analysis of Variance)**: Used for numerical features to determine their contribution to churn.
+- **Feature Elimination**: Removed statistically insignificant features to improve model accuracy and efficiency.
+
+### 3. Models
+- **Supervised Learning Algorithms**:
+  - **Logistic Regression** with regularization techniques (Lasso, Ridge, ElasticNet)
+  - **Decision Tree Classifier**
+  - **Random Forest Classifier**
+  - **Support Vector Machine (SVM)**
+- **Feature Selection**: Used Recursive Feature Elimination (RFE) to further enhance model accuracy by identifying essential features.
+
+### 4. Customer Segmentation 
+- **K-Means Clustering**: Segmented customers based on tenure, monthly charges, and total charges.
+- **Optimal Cluster Selection**: Used the **Elbow Method** to determine the optimal number of clusters.
+- **Cluster Analysis**: Summarized key feature averages for each cluster and calculated churn rates within each cluster, offering insights into different customer segments and their likelihood to churn.
+
+### 5. Model Evaluation
+- **Evaluation Metrics**: Assessed model performance using accuracy, classification reports, and cross-validation for reliability.
+- **Hyperparameter Tuning**: Used GridSearchCV to optimize model parameters for better performance.
+
+## Getting Started
+
+### Prerequisites
+- Python 3.x
+- Jupyter Notebook
+- Libraries: `pandas`, `numpy`, `sklearn`, `matplotlib`, `seaborn`
+
+Install the necessary packages using:
+```bash
+pip install -r requirements.txt
+```
+
+### Usage
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/Customer-Churn-Prediction.git
+   ```
+2. Open the notebook:
+   ```bash
+   jupyter notebook TeleCustomer.ipynb
+   ```
+3. Run all cells to preprocess data, train models, and perform customer segmentation.
+
+## Results and Insights
+- **Churn Prediction**: Key features contributing to churn include monthly charges and tenure.
+- **Customer Segmentation**: K-Means clustering identified distinct customer segments based on spending and tenure, with each segment showing different churn probabilities. These insights enable targeted retention strategies.
+
+## Contributing
+Contributions are welcome!
+
+---
+
