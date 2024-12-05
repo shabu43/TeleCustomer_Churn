@@ -65,7 +65,7 @@ or
 - **Customer Segmentation**: K-Means clustering identified distinct customer segments based on spending and tenure, with each segment showing different churn probabilities. These insights enable targeted retention strategies.
 
 ## Live Demo
-[Google Colab]([https://www.quora.com](https://colab.research.google.com/drive/14YxxPhPm3x-Ibi7EBPrBDwZGz-zPk5HZ?usp=sharing))
+[Google Colab](https://colab.research.google.com/drive/14YxxPhPm3x-Ibi7EBPrBDwZGz-zPk5HZ?usp=sharing)
 
 ## Contributing
 Contributions are welcome!
